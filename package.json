@@ -8,6 +8,7 @@
   "license": "CC-BY-NC-ND-4.0",
   "devDependencies": {
     "css-loader": "^1.0.0",
+    "mini-css-extract-plugin": "^0.4.3",
     "webpack": "^4.19.1",
     "webpack-cli": "^3.1.0"
   },
