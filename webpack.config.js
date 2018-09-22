@@ -30,5 +30,11 @@ module.exports = {
                 ]
             }
         ]
+    },
+// Development server 
+    devServer: {
+        contentBase: resolve(__dirname, 'dist'),
+        compress: false,
+        port: 8080
     }
 }
