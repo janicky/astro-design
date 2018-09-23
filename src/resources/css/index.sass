@@ -1,10 +1,51 @@
-@import url('https://fonts.googleapis.com/css?family=Gugi')
+@import url('https://fonts.googleapis.com/css?family=Gugi|Roboto+Condensed:300,300i,400,700')
     
 html, body
     height: 100%
     
 body
     background: black
+    font-family: 'Roboto Condensed', sans-serif
+
+.container
+    width: 1200px
+    margin: 0 auto
+
+.header
+    position: absolute
+    z-index: 999
+    background-color: rgba(0, 0, 0, .3)
+    box-shadow: rgba(0, 0, 0, .6) 0 0 55px, inset #000 0 10px 20px
+    width: 100%
+    display: flex
+    align-items: center
+    height: 80px
+
+.menu
+    list-style: none
+    padding: 0
+    margin: 0
+    display: flex
+
+.menu-item
+    margin: 0
+    padding: 0
+
+    a
+        display: inline-block
+        padding: 15px 20px
+        text-decoration: none
+        color: rgba(255, 255, 255, .6)
+        letter-spacing: 0.1em
+        text-shadow: transparent 0 3px 2px, transparent 0 -3px 2px
+        transition-duration: 200ms
+        transform: translateY(0)
+
+        &:hover
+            color: white
+            transition-duration: 500ms
+            transform: translateY(3px)
+
 
 .jumbotron.jumbotron--parallax
     height: 100vh
