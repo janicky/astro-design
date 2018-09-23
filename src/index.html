@@ -9,29 +9,40 @@
 <body>
     <header class="header">
         <div class="container">
-            <nav class="header-menu">
+            <nav class="header__menu">
                 <ul class="menu">
-                    <li class="menu-item">
+                    <li class="menu__item">
                         <a href="#">Earth</a>
                     </li>
-                    <li class="menu-item">
+                    <li class="menu__item">
                         <a href="#">Discover Universe</a>
                     </li>
-                    <li class="menu-item">
+                    <li class="menu__item">
                         <a href="#">Where are they?</a>
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
-    <div class="jumbotron jumbotron--parallax" id="parallax">
-        <div data-depth="0.07" class="jumbotron-graphic-element jumbotron-graphic-element--element-2"></div>
-        <div data-depth="0.04" data-invert-x="true" class="jumbotron-graphic-element jumbotron-graphic-element--element-1"></div>
-        <div data-depth="0.15" data-invert-x="true" class="jumbotron-text-element jumbotron-text-element--shadow">
-                The sky was cloudless and of a deep dark blue.
+    <div class="jumbotron jumbotron--parallax">
+        <div class="jumbotron__parallax-container" id="parallax">
+            <div data-depth="0.07" class="jumbotron__graphic-element jumbotron__graphic-element--element-2"></div>
+            <div data-depth="0.04" data-invert-x="true" class="jumbotron__graphic-element jumbotron__graphic-element--element-1"></div>
+            <div data-depth="0.15" data-invert-x="true" class="jumbotron__text-element jumbotron__text-element--shadow">
+                    The sky was cloudless and of a deep dark blue.
+            </div>
+            <div data-depth="0.10" data-invert-y="true" class="jumbotron__text-element">
+                    The sky was cloudless and of a deep dark blue.
+            </div>
         </div>
-        <div data-depth="0.10" data-invert-y="true" class="jumbotron-text-element">
-                The sky was cloudless and of a deep dark blue.
+
+        <div class="jumbotron__scroll-down">
+            <div class="scroll-down">
+                <div class="scroll-down__icon"></div>
+                <div class="scroll-down__text">
+                    Scroll down
+                </div>
+            </div>
         </div>
     </div>
 </body>
