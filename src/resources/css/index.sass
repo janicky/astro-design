@@ -6,6 +6,7 @@ html, body
 body
     background: black
     font-family: 'Roboto Condensed', sans-serif
+    height: 2000px
 
 .container
     width: 1200px
@@ -70,6 +71,9 @@ body
 .jumbotron__graphic-element--element-2
     background-image: url('../images/milky-way-foreground-2.png')
 
+.jumbotron__graphic-element--element-3
+    background-image: url('../images/milky-way.jpg')
+
 .jumbotron__text-element
     width: 100%
     height: 100%
@@ -91,6 +95,14 @@ body
     bottom: 0
     display: flex
     justify-content: center
+    opacity: 0
+    transform: translateY(15px)
+    transition-duration: 400ms
+
+.jumbotron__scroll-down--active
+    opacity: 1
+    transform: translateY(0px)
+    transition-duration: 400ms
 
 .scroll-down
     display: flex
