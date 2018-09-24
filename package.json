@@ -24,7 +24,6 @@
     "server": "webpack-dev-server"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.3.1",
     "normalize.css": "^8.0.0",
     "parallax-js": "^3.1.0"
   }
