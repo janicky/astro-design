@@ -22,6 +22,29 @@ body
     align-items: center
     height: 80px
 
+    &>.container
+        display: grid
+        grid-template-columns: 25% 75%
+
+.logo
+    display: flex
+    align-items: center
+
+.logo__icon
+    width: 40px
+    height: 40px
+    background-image: url("../images/astro-icon.png")
+    background-size: contain
+    background-repeat: no-repeat
+    background-position: center
+
+.logo__text
+    font-family: 'Gugi', cursive
+    color: #ffffff
+    padding: 0 15px
+    font-size: 140%
+    cursor: default
+
 .menu
     list-style: none
     padding: 0
