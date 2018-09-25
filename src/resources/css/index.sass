@@ -220,7 +220,7 @@ body
 
 .presenter
     background: rgb(136,191,232)
-    background: -moz-linear-gradient(45deg, rgba(136,191,232,1) 0%, rgba(112,176,224,1) 100%)
+    background: -moz-linear-gradient(45deg, $color-water 0%, $color-dark-sky 100%)
     background: -webkit-linear-gradient(45deg, $color-water 0%, $color-dark-sky 100%)
 
 
@@ -228,6 +228,8 @@ body
         display: flex
 
 .presenter__picture
+    position: relative
+    z-index: 1999
     transform: scale(1.1)
     box-shadow: rgba(0, 0, 0, .3) 0 5px 35px
     
@@ -279,6 +281,31 @@ body
         font-weight: 500
         color: white
     
+.presenter--right
+    background: rgb(136,191,232)
+    background: -moz-linear-gradient(45deg, $color-dark-sky 0%, $color-basalt 100%)
+    background: -webkit-linear-gradient(45deg, $color-dark-sky 0%, $color-basalt 100%)
+
+    & > .container
+        flex-direction: row-reverse
+
+    .presenter__title
+        text-align: right
+
+        &:before
+            background: rgba(255, 255, 255, .6)
+            background: -moz-linear-gradient(45deg, rgba(255,255,255,.4) 0%, rgba(255,255,255,.9) 100%)
+            background: -webkit-linear-gradient(45deg, rgba(255,255,255,.4) 0%, rgba(255,255,255,.9) 100%)
+            left: auto
+            right: 0
+
+        &:after
+            left: auto
+            right: 61%
+
+    .presenter__text
+        text-align: right
+
 .slider
     padding: 20px
 
