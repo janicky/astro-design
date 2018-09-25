@@ -1,0 +1,122 @@
+
+.jumbotron.jumbotron--parallax
+    height: 100vh
+    background-image: url("../images/milky-way.jpg")
+    background-size: cover
+    background-repeat: no-repeat
+    overflow: hidden
+
+.jumbotron.jumbotron--moon-parallax
+    height: 500px
+    background-image: url("../images/moon-foreground-3.jpg")
+    background-size: cover
+    background-repeat: no-repeat
+    overflow: hidden
+
+
+.jumbotron__parallax-container
+    height: 100%
+
+.jumbotron__graphic-element
+    position: relative
+    height: 100%
+    width: 100%
+    background-size: cover
+    background-repeat: no-repeat
+
+.jumbotron__graphic-element--element-1
+    background-image: url('../images/milky-way-foreground.png')
+
+.jumbotron__graphic-element--element-2
+    background-image: url('../images/milky-way-foreground-2.png')
+
+.jumbotron__graphic-element--element-3
+    background-image: url('../images/milky-way.jpg')
+
+.jumbotron__graphic-element--element-4
+    background-image: url('../images/moon-foreground-1.png')
+
+.jumbotron__graphic-element--element-5
+    background-image: url('../images/moon-foreground-2.png')
+
+.jumbotron__graphic-element--element-6
+    background-image: url('../images/moon-foreground-3.jpg')
+
+.jumbotron__text-element
+    width: 100%
+    height: 100%
+    text-align: center
+    line-height: 100vh
+    color: white
+    font-family: 'Gugi', cursive;
+    font-size: 3rem
+    text-shadow: #6f618a 0 2px 55px
+
+.jumbotron__text-element--shadow
+    color: black
+    font-size: 3.2rem
+    filter: blur(15px)
+
+.jumbotron__scroll-down
+    position: absolute
+    width: 100%
+    bottom: 0
+    display: flex
+    justify-content: center
+    opacity: 0
+    transform: translateY(15px)
+    transition-duration: 400ms
+
+.jumbotron__scroll-down--active
+    opacity: 1
+    transform: translateY(0px)
+    transition-duration: 400ms
+
+.jumbotron.jumbotron--moon-parallax
+    .jumbotron__text-element
+        line-height: 500px
+        text-shadow: none
+        color: #000000
+
+.scroll-down
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 15px
+
+.scroll-down__icon
+    position: relative
+    width: 20px
+    height: 35px
+    border: 3px solid rgba(255, 255, 255, .7)
+    border-radius: 30px
+    margin-bottom: 10px
+
+    &:before
+        content: ''
+        position: absolute
+        width: 4px
+        height: 5px
+        border-radius: 100%
+        background-color: #ffffff
+        left: 0
+        right: 0
+        top: 7px
+        margin: 0 auto
+        animation-name: scroll-down
+        animation-duration: 1.2s
+        animation-iteration-count: infinite
+
+.scroll-down__text
+    text-transform: uppercase
+    font-size: 60%
+    color: rgba(255, 255, 255, .5)
+    letter-spacing: 0.3em
+    font-weight: 400
+
+@keyframes scroll-down
+    0%
+        opacity: 1
+    100%
+        opacity: 0
+        transform: translateY(10px)
