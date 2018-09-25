@@ -229,9 +229,29 @@ body
     z-index: 1999
     transform: scale(1.1)
     box-shadow: rgba(0, 0, 0, .3) 0 5px 35px
+    border-radius: 10p
+
+    &:before, &:after
+        content: ''
+        position: absolute
+        width: 120px
+        height: 120px
+        background-color: #ffffff
+        z-index: -1
+        border-radius: 45px 0px 45px 0px
+
+    &:before
+        transform: translateX(-7px) translateY(-7px)
+
+    &:after
+        bottom: 0
+        right: 0
+        transform: translateX(7px) translateY(7px)
     
     img
         display: block
+        border-radius: 40px 0 40px 0
+        overflow: hidden
 
 .presenter__info
     margin-left: 20px
