@@ -219,10 +219,7 @@ body
         transform: translateY(10px)
 
 .presenter
-    background: rgb(136,191,232)
-    background: -moz-linear-gradient(45deg, $color-water 0%, $color-dark-sky 100%)
-    background: -webkit-linear-gradient(45deg, $color-water 0%, $color-dark-sky 100%)
-
+    background-color: $color-dark-sky
 
     & > .container
         display: flex
@@ -273,7 +270,7 @@ body
     padding: 20px 0
     font-weight: 100
     color: rgba(255, 255, 255, .7)
-    font-size: 140%
+    font-size: 130%
     letter-spacing: 0.05em
     line-height: 130%
 
@@ -282,9 +279,6 @@ body
         color: white
     
 .presenter--right
-    background: rgb(136,191,232)
-    background: -moz-linear-gradient(45deg, $color-dark-sky 0%, $color-basalt 100%)
-    background: -webkit-linear-gradient(45deg, $color-dark-sky 0%, $color-basalt 100%)
 
     & > .container
         flex-direction: row-reverse
@@ -305,6 +299,15 @@ body
 
     .presenter__text
         text-align: right
+
+.presenter--water
+    background-color: $color-water
+
+.presenter--basalt
+    background-color: $color-basalt
+
+.presenter--regolith
+    background-color: $color-regolith
 
 .slider
     padding: 20px
