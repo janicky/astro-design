@@ -1,0 +1,77 @@
+.header
+    position: fixed
+    z-index: 2999
+    background-color: rgba(0, 0, 0, .4)
+    box-shadow: rgba(0, 0, 0, .6) 0 0 55px
+    width: 100%
+    display: flex
+    align-items: center
+    height: 80px
+
+    &>.container
+        display: grid
+        grid-template-columns: 250px auto auto
+
+.logo
+    display: flex
+    align-items: center
+
+.logo__icon
+    width: 40px
+    height: 40px
+    background-image: url("../images/astro-icon.png")
+    background-size: contain
+    background-repeat: no-repeat
+    background-position: center
+
+.logo__text
+    font-family: 'Gugi', cursive
+    color: #ffffff
+    padding: 0 15px
+    font-size: 140%
+    cursor: default
+
+.menu
+    list-style: none
+    padding: 0
+    margin: 0
+    display: flex
+    justify-content: center
+
+.menu__item
+    margin: 0
+    padding: 0
+
+    a
+        display: inline-block
+        padding: 15px 20px
+        text-decoration: none
+        color: rgba(255, 255, 255, .6)
+        letter-spacing: 0.1em
+        text-shadow: transparent 0 3px 2px, transparent 0 -3px 2px
+        transition-duration: 200ms
+        transform: translateY(0)
+
+        &:hover
+            color: $color-water
+            transition-duration: 400ms
+            transform: translateY(2px)
+
+
+.social-menu
+    display: flex
+    align-items: flex-end
+    list-style: none
+    padding: 0
+    margin: 0
+
+.social-menu__item a
+    display: inline-block
+    padding: 10px
+    color: rgba(255, 255, 255, .5)
+    transition-duration: 200ms
+    font-size: 120%
+
+    &:hover
+        color: white
+        transition-duration: 300ms
