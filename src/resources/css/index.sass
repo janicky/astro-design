@@ -30,9 +30,8 @@ body
 .presenter__picture
     position: relative
     z-index: 1999
-    transform: scale(1.1)
+    transform: scale(1.05)
     box-shadow: rgba(0, 0, 0, .3) 0 5px 35px
-    border-radius: 10p
 
     &:before, &:after
         content: ''
@@ -44,17 +43,30 @@ body
         border-radius: 45px 0px 45px 0px
 
     &:before
-        transform: translateX(-7px) translateY(-7px)
+        transform: translateX(-20px) translateY(-20px)
 
     &:after
         bottom: 0
         right: 0
-        transform: translateX(7px) translateY(7px)
+        transform: translateX(20px) translateY(20px)
     
     img
         display: block
         border-radius: 40px 0 40px 0
         overflow: hidden
+
+.presenter__picture
+    &.scroll-reveal.scroll-reveal--active
+
+        &:before
+            transform: translateX(-7px) translateY(-7px)
+
+        &:after
+            transform: translateX(7px) translateY(7px)
+
+        &:before, &:after
+            transition-delay: 200ms
+            transition-duration: 1000ms
 
 .presenter__info
     margin-left: 20px

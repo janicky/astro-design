@@ -27,3 +27,11 @@ $(function() {
         slidesToShow: 4
     })
 })
+
+ScrollReveal().reveal('.scroll-reveal', {
+    opacity: 0,
+    scale: 0.9,
+    beforeReveal: e => {
+        e.classList.add('scroll-reveal--active')
+    }
+})

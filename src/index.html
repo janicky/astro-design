@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" integrity="sha256-3h45mwconzsKjTUULjY+EoEkoRhXcOIU4l5YAw2tSOU=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha256-4hqlsNP9KM6+2eA8VUT0kk4RsMRTeS7QGHIM+MZ5sLY=" crossorigin="anonymous">
+
+    <!-- Scripts (CDN) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.4/scrollreveal.min.js" integrity="sha256-2++TbT6Ds/LNzulZ6dwioGAB0eefsnblRtpcAa6QHi0=" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="header">
@@ -82,7 +85,7 @@
 
     <div class="presenter ">
         <div class="container">
-            <div class="presenter__picture">
+            <div class="presenter__picture scroll-reveal">
                 <img src=<%=require('./resources/images/cosmos.jpg') %> alt="International Space Station photo - NASA">
             </div>
             <div class="presenter__info">
@@ -111,7 +114,7 @@
 
     <div class="presenter presenter--right presenter--basalt">
         <div class="container">
-            <div class="presenter__picture">
+            <div class="presenter__picture scroll-reveal">
                 <img src=<%=require('./resources/images/apollo-mission.jpg') %> alt="Project Apollo">
             </div>
             <div class="presenter__info">
