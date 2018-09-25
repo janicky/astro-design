@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Gugi|Roboto+Condensed:300,300i,400,700')
     
+$color-dark-sky: #4623a1
+$color-water: #00ffcc
+$color-basalt: #4d5558
+$color-regolith: #838383
+
 html, body
     height: 100%
     
@@ -7,6 +12,7 @@ body
     background: black
     font-family: 'Roboto Condensed', sans-serif
     height: 2000px
+    font-size: 16px
 
 .container
     width: 1200px
@@ -67,7 +73,7 @@ body
         transform: translateY(0)
 
         &:hover
-            color: #00ffcc
+            color: $color-water
             transition-duration: 400ms
             transform: translateY(2px)
 
@@ -188,3 +194,65 @@ body
     100%
         opacity: 0
         transform: translateY(10px)
+
+.presenter
+    background: rgb(136,191,232)
+    background: -moz-linear-gradient(45deg, rgba(136,191,232,1) 0%, rgba(112,176,224,1) 100%)
+    background: -webkit-linear-gradient(45deg, $color-water 0%, $color-dark-sky 100%)
+
+
+    & > .container
+        display: flex
+
+.presenter__picture
+    transform: scale(1.1)
+    box-shadow: rgba(0, 0, 0, .3) 0 5px 35px
+    
+    img
+        display: block
+
+.presenter__info
+    margin-left: 20px
+    padding: 50px
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+.presenter__title
+    position: relative
+    font-size: 2.4rem
+    font-weight: 100
+    color: #fff
+    font-family: 'Gugi', cursive
+    margin-bottom: 10px
+
+    &:before, &:after
+        overflow: hidden
+        content: ''
+        position: absolute
+        bottom: -15px
+        height: 6px
+        border-radius: 30px
+        background: rgba(255, 255, 255, .6)
+        background: -moz-linear-gradient(45deg, rgba(255,255,255,.9) 0%, rgba(255,255,255,.4) 100%)
+        background: -webkit-linear-gradient(45deg, rgba(255,255,255,.9) 0%, rgba(255,255,255,.4) 100%)
+
+    &:before
+        width: 60% 
+    &:after
+        width: 10%
+        background: rgba(255, 255, 255, .3)  
+        left: 61%
+
+.presenter__text
+    padding: 20px 0
+    font-weight: 100
+    color: rgba(255, 255, 255, .7)
+    font-size: 140%
+    letter-spacing: 0.05em
+    line-height: 130%
+
+    strong
+        font-weight: 500
+        color: white
+    
