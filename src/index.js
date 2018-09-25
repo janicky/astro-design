@@ -6,6 +6,8 @@ const Parallax = require('parallax-js')
 var scene = document.getElementById('parallax')
 var parallax = new Parallax(scene)
 
+new Parallax(document.getElementById('moon-parallax'))
+
 var scroll_down = document.getElementById('scroll-down')
 document.addEventListener('scroll', () => {
     if (window.scrollY > 250) {
@@ -13,4 +15,10 @@ document.addEventListener('scroll', () => {
     } else {
         scroll_down.classList.add('jumbotron__scroll-down--active')
     }
+})
+
+$(function() {
+    $('.slider__container').slick({
+        slidesToShow: 4
+    })
 })

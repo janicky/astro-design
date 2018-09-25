@@ -103,6 +103,14 @@ body
     background-repeat: no-repeat
     overflow: hidden
 
+.jumbotron.jumbotron--moon-parallax
+    height: 500px
+    background-image: url("../images/moon-foreground-3.jpg")
+    background-size: cover
+    background-repeat: no-repeat
+    overflow: hidden
+
+
 .jumbotron__parallax-container
     height: 100%
 
@@ -121,6 +129,15 @@ body
 
 .jumbotron__graphic-element--element-3
     background-image: url('../images/milky-way.jpg')
+
+.jumbotron__graphic-element--element-4
+    background-image: url('../images/moon-foreground-1.png')
+
+.jumbotron__graphic-element--element-5
+    background-image: url('../images/moon-foreground-2.png')
+
+.jumbotron__graphic-element--element-6
+    background-image: url('../images/moon-foreground-3.jpg')
 
 .jumbotron__text-element
     width: 100%
@@ -151,6 +168,12 @@ body
     opacity: 1
     transform: translateY(0px)
     transition-duration: 400ms
+
+.jumbotron.jumbotron--moon-parallax
+    .jumbotron__text-element
+        line-height: 500px
+        text-shadow: none
+        color: #000000
 
 .scroll-down
     display: flex
@@ -256,3 +279,11 @@ body
         font-weight: 500
         color: white
     
+.slider
+    padding: 20px
+
+.slider__item
+    color: white
+    padding: 50px
+    box-sizing: border-box
+    border: 10px solid $color-water
