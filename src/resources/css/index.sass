@@ -30,7 +30,7 @@ body
 .presenter__picture
     position: relative
     z-index: 1999
-    transform: scale(1.05)
+    transform: scale(1.1)
     box-shadow: rgba(0, 0, 0, .3) 0 5px 35px
 
     &:before, &:after
@@ -147,8 +147,53 @@ body
 .slider
     padding: 50px 20px
 
+.slider__item-container
+    margin: 0 10px
+
 .slider__item
     color: white
-    padding: 50px
+    padding: 10px
     box-sizing: border-box
-    border: 10px solid $color-water
+    border-radius: 35px 0
+
+.slider__picture
+    position: relative
+
+    img
+        display: block
+        width: 100%
+        border-radius: 40px 0
+        filter: grayscale(100%) contrast(120%)
+        transition-duration: 500ms
+
+    &:before, &:after
+        content: ''
+        position: absolute
+        width: 120px
+        height: 120px
+        background-color: #ffffff
+        z-index: -1
+        border-radius: 45px 0px 45px 0px
+
+    &:before
+        transform: translateX(-5px) translateY(-5px)
+
+    &:after
+        bottom: 0
+        right: 0
+        transform: translateX(5px) translateY(5px)
+
+.slider__title
+    font-size: 1.5rem
+    color: $color-water
+    font-family: 'Gugi', cursive
+    margin: 20px 0
+    text-align: center
+    
+.slider__text
+    color: rgba(255, 255, 255, .7)
+    font-weight: 100
+
+.slick-slide
+    padding: 10px
+    box-sizing: border-box

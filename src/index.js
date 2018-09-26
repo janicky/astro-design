@@ -31,7 +31,11 @@ $(function() {
 ScrollReveal().reveal('.scroll-reveal', {
     opacity: 0,
     scale: 0.9,
+    reset: true,
     beforeReveal: e => {
         e.classList.add('scroll-reveal--active')
+    },
+    beforeReset: e => {
+        e.classList.remove('scroll-reveal--active')
     }
 })
