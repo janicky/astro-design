@@ -1,0 +1,122 @@
+.presenter
+    background-color: $color-dark-sky
+
+    & > .container
+        display: flex
+
+.presenter__picture
+    position: relative
+    z-index: 1999
+    transform: scale(1.1)
+    box-shadow: rgba(0, 0, 0, .3) 0 5px 35px
+
+    &:before, &:after
+        content: ''
+        position: absolute
+        width: 120px
+        height: 120px
+        background-color: #ffffff
+        z-index: -1
+        border-radius: 45px 0px 45px 0px
+
+    &:before
+        transform: translateX(-20px) translateY(-20px)
+
+    &:after
+        bottom: 0
+        right: 0
+        transform: translateX(20px) translateY(20px)
+    
+    img
+        display: block
+        border-radius: 40px 0 40px 0
+        overflow: hidden
+
+.presenter__picture
+    &.scroll-reveal.scroll-reveal--active
+
+        &:before
+            transform: translateX(-7px) translateY(-7px)
+
+        &:after
+            transform: translateX(7px) translateY(7px)
+
+        &:before, &:after
+            transition-delay: 200ms
+            transition-duration: 1000ms
+
+.presenter__info
+    margin-left: 20px
+    padding: 50px
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+.presenter__title
+    position: relative
+    font-size: 2.4rem
+    font-weight: 100
+    color: #fff
+    font-family: 'Gugi', cursive
+    margin-bottom: 10px
+
+    &:before, &:after
+        overflow: hidden
+        content: ''
+        position: absolute
+        bottom: -15px
+        height: 6px
+        border-radius: 30px
+        background: rgba(255, 255, 255, .6)
+        background: -moz-linear-gradient(45deg, rgba(255,255,255,.9) 0%, rgba(255,255,255,.4) 100%)
+        background: -webkit-linear-gradient(45deg, rgba(255,255,255,.9) 0%, rgba(255,255,255,.4) 100%)
+
+    &:before
+        width: 60% 
+    &:after
+        width: 10%
+        background: rgba(255, 255, 255, .3)  
+        left: 61%
+
+.presenter__text
+    padding: 20px 0
+    font-weight: 100
+    color: rgba(255, 255, 255, .7)
+    font-size: 130%
+    letter-spacing: 0.05em
+    line-height: 130%
+
+    strong
+        font-weight: 500
+        color: white
+    
+.presenter--right
+
+    & > .container
+        flex-direction: row-reverse
+
+    .presenter__title
+        text-align: right
+
+        &:before
+            background: rgba(255, 255, 255, .6)
+            background: -moz-linear-gradient(45deg, rgba(255,255,255,.4) 0%, rgba(255,255,255,.9) 100%)
+            background: -webkit-linear-gradient(45deg, rgba(255,255,255,.4) 0%, rgba(255,255,255,.9) 100%)
+            left: auto
+            right: 0
+
+        &:after
+            left: auto
+            right: 61%
+
+    .presenter__text
+        text-align: right
+
+.presenter--water
+    background-color: $color-water
+
+.presenter--basalt
+    background-color: $color-basalt
+
+.presenter--regolith
+    background-color: $color-regolith
