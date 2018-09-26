@@ -1,0 +1,59 @@
+.btn
+    display: inline-block
+    color: #ffffff
+    text-decoration: none
+    padding: 10px 20px
+    margin: 2px
+    border: 2px solid #ffffff
+    border-radius: 20px 0
+    text-transform: uppercase
+    font-weight: 600
+    font-size: 95%
+    letter-spacing: 0.05em
+    transition-duration: 300ms
+
+    &:hover, &.btn--reversed
+        background-color: #ffffff
+        color: $color-basalt
+        border-color: transparent
+
+    &:hover
+        transition-duration: 500ms
+        transform: translateY(2px)
+
+    .fab
+        margin-right: 5px
+        margin-left: -2px
+        opacity: .6
+
+.btn--dark-sky
+    border-color: $color-dark-sky
+    color: $color-dark-sky
+
+    &:hover, &.btn--reversed
+        background-color: $color-dark-sky
+        color: #ffffff
+
+.btn--water
+    border-color: $color-water
+    color: $color-water
+
+    &:hover, &.btn--reversed
+        background-color: $color-water
+        color: #000000
+
+.btn--basalt
+    border-color: $color-basalt
+    color: $color-regolith
+
+    &:hover, &.btn--reversed
+        background-color: $color-basalt
+        color: #ffffff
+
+.btn--regolith
+    border-color: $color-regolith
+    color: rgba(255, 255, 255, .7)
+
+    &:hover, &.btn--reversed
+        background-color: $color-regolith
+        color: #000000
