@@ -7,6 +7,7 @@ var scene = document.getElementById('parallax')
 var parallax = new Parallax(scene)
 
 new Parallax(document.getElementById('moon-parallax'))
+new Parallax(document.getElementById('iss-parallax'))
 
 var scroll_down = document.getElementById('scroll-down')
 var header = document.getElementsByClassName('header')[0]

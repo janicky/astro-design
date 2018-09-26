@@ -13,6 +13,13 @@
     background-repeat: no-repeat
     overflow: hidden
 
+.jumbotron.jumbotron--iss-parallax
+    height: 500px
+    background-image: url("../images/iss-foreground.jpg")
+    background-size: cover
+    background-repeat: no-repeat
+    overflow: hidden
+
 
 .jumbotron__parallax-container
     height: 100%
@@ -38,9 +45,6 @@
 
 .jumbotron__graphic-element--element-5
     background-image: url('../images/moon-foreground-2.png')
-
-.jumbotron__graphic-element--element-6
-    background-image: url('../images/moon-foreground-3.jpg')
 
 .jumbotron__text-element
     width: 100%
@@ -77,6 +81,12 @@
         line-height: 500px
         text-shadow: none
         color: #000000
+
+.jumbotron.jumbotron--iss-parallax
+    .jumbotron__text-element
+        line-height: 500px
+        text-shadow: none
+        color: $color-water
 
 .scroll-down
     display: flex
