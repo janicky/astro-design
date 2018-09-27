@@ -24,6 +24,9 @@ document.addEventListener('scroll', () => {
 
 
 $(function() {
+    $("#lightgallery").lightGallery({
+        selector: '.gallery__item-picture'
+    }); 
     $('.slider__container').slick({
         slidesToShow: 4
     })
