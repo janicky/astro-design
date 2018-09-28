@@ -1,0 +1,38 @@
+.form
+    display: block
+
+.form__row
+    padding: 8px
+
+.form__row label
+    color: white
+    text-transform: uppercase
+    font-weight: 700
+    font-size: 80%
+    letter-spacing: 0.15em
+    display: inline-block
+    padding: 10px
+
+.form__row input
+    display: block
+    background-color: rgba(0, 0, 0, .4)
+    border: 2px solid $color-regolith
+    border-radius: 15px 0
+    padding: 12px
+    box-sizing: border-box
+    width: 100%
+    color: $color-regolith
+    font-size: 110%
+    transition-duration: 400ms
+    letter-spacing: 0.15em
+
+    &:focus
+        border-color: white
+        color: white
+        transform: translateY(2px)
+        transition-duration: 400ms
+
+    &::placeholder
+        font-size: 85%
+        letter-spacing: 0.03em
+        opacity: .7
