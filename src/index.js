@@ -32,6 +32,8 @@ $(function() {
     })
 })
 
+ScrollReveal().reveal('.scroll-reveal--default', { delay: 150 })
+
 ScrollReveal().reveal('.scroll-reveal', {
     opacity: 0,
     scale: 0.9,
@@ -41,5 +43,15 @@ ScrollReveal().reveal('.scroll-reveal', {
     },
     beforeReset: e => {
         e.classList.remove('scroll-reveal--active')
+    }
+})
+
+var humans_counter = new CountUp('humans-counter', 0, 92, 0, 3, { useGrouping: false, suffix: '%' })
+var ie_counter = new CountUp('ie-counter', 0, 8, 0, 3, { useGrouping: false, suffix: '%' })
+
+ScrollReveal().reveal('.stats', {
+    afterReveal: e => {
+        humans_counter.start()
+        ie_counter.start()
     }
 })
