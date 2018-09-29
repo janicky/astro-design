@@ -36,33 +36,6 @@
     font-size: 140%
     cursor: default
 
-.menu
-    list-style: none
-    padding: 0
-    margin: 0
-    display: flex
-    justify-content: center
-
-.menu__item
-    margin: 0
-    padding: 0
-
-    a
-        display: inline-block
-        padding: 15px 20px
-        text-decoration: none
-        color: rgba(255, 255, 255, .6)
-        letter-spacing: 0.1em
-        text-shadow: transparent 0 3px 2px, transparent 0 -3px 2px
-        transition-duration: 200ms
-        transform: translateY(0)
-
-        &:hover
-            color: $color-water
-            transition-duration: 400ms
-            transform: translateY(2px)
-
-
 .social-menu
     display: flex
     align-items: flex-end
@@ -80,3 +53,15 @@
     &:hover
         color: white
         transition-duration: 300ms
+
+
+.header
+    .menu
+        display: flex
+        justify-content: center
+
+        a
+            padding: 15px 20px
+
+            &:hover
+                color: $color-water

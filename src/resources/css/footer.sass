@@ -1,0 +1,43 @@
+.footer
+    background-color: #000000
+    padding: 50px
+
+    & > .container
+        display: flex
+        align-items: center
+
+    .menu__item
+        a
+            font-weight: 100
+
+    p   
+        font-weight: 100
+
+        &:not(.footer__license)
+            letter-spacing: 0.05em
+            color: rgba(255, 255, 255, .4)
+            font-size: 110%
+
+.footer__col
+    width: 40%
+
+.footer__license
+    font-size: 80%
+    letter-spacing: 0.05em
+    color: rgba(255, 255, 255, .3)
+
+    a
+        color: rgba(255, 255, 255, .5)
+        text-decoration: none
+        display: inline-block
+        padding: 5px 10px
+        border: 2px solid rgba(255, 255, 255, .5)
+        transition-duration: 200ms
+        border-radius: 10px 0
+        font-weight: 500
+
+        &:hover
+            border-color: transparent
+            background-color: $color-dark-sky
+            color: white
+            transition-duration: 400ms
