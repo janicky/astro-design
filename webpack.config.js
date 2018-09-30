@@ -43,7 +43,7 @@ module.exports = {
                 ]
             },
             {
-                test: /\.(jpg|png)/,
+                test: /\.(jpg|png|svg)/,
                 use: [
                     {
                         loader: 'file-loader',
@@ -52,6 +52,10 @@ module.exports = {
                         }
                     }
                 ]
+            },
+            {
+                test: /\.(xml|webmanifest)/,
+                use: ['file-loader']
             }
         ]
     },
